@@ -12,6 +12,18 @@ corresponds to a tagged commit (`git tag`) for easy rollback/diffing.
 
 ## [Unreleased]
 
+## [1.4.1] - 2026-08-26
+
+### Fixed
+- Experience page's timeline+sidebar layout was a fixed
+  `grid-template-columns: 1fr 300px` with no responsive override —
+  below ~960px wide this caused horizontal overflow and truncated
+  text (confirmed broken at 375px and 880px). Added a proper
+  breakpoint (900px) that collapses to one column and drops the
+  sidebar's sticky positioning. Found while auditing responsiveness
+  in response to a Bootstrap-vs-custom-CSS question — this was a
+  genuine pre-existing gap, not a framework limitation.
+
 ## [1.4.0] - 2026-08-26
 
 ### Added
