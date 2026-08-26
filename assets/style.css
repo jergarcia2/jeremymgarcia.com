@@ -334,6 +334,22 @@ section + section { padding-top: 0; }
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
 
+/* ── Experience page layout ─────────────────────────────── */
+.experience-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: start;
+}
+.experience-sidebar {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+@media (max-width: 900px) {
+  .experience-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .experience-sidebar { position: static; }
+}
+
 /* ── Timeline ───────────────────────────────────────────── */
 .timeline { position: relative; padding-left: 2rem; }
 .timeline::before {
