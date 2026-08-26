@@ -74,7 +74,7 @@ a:hover { color: var(--text); }
   margin-bottom: 2rem;
 }
 
-section { padding: 56px 0; }
+section { padding: 40px 0; }
 section + section { padding-top: 0; }
 
 /* ── Navigation ─────────────────────────────────────────── */
@@ -466,6 +466,12 @@ section + section { padding-top: 0; }
   transition: border-color .2s, color .2s;
 }
 .skill-pill:hover { border-color: var(--accent); color: var(--text); }
+.skill-pill--learning {
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--accent-dim);
+}
+.skill-pill--learning:hover { border-color: var(--accent); }
 
 /* ── Contact form ───────────────────────────────────────── */
 .form-group { margin-bottom: 1.25rem; }
@@ -498,7 +504,7 @@ section + section { padding-top: 0; }
 
 /* ── Page header (inner pages) ──────────────────────────── */
 .page-header {
-  padding: 48px 0 32px;
+  padding: 40px 0 24px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 0;
   animation: fadeUp .5s ease both;
@@ -508,7 +514,7 @@ section + section { padding-top: 0; }
 /* ── Empty state ────────────────────────────────────────── */
 .empty-state {
   text-align: center;
-  padding: 56px 24px;
+  padding: 40px 24px;
   border: 1px dashed var(--line);
   border-radius: var(--radius-md);
 }
@@ -529,7 +535,7 @@ section + section { padding-top: 0; }
 .footer {
   border-top: 1px solid var(--line);
   padding: 32px 0;
-  margin-top: 56px;
+  margin-top: 40px;
 }
 .footer__inner {
   display: flex;
@@ -568,9 +574,9 @@ section + section { padding-top: 0; }
 
 /* ── Responsive ─────────────────────────────────────────── */
 @media (max-width: 600px) {
-  section { padding: 40px 0; }
-  .hero { padding: 32px 0 0; }
-  .page-header { padding: 32px 0 20px; margin-bottom: 0; }
+  section { padding: 32px 0; }
+  .hero { padding: 28px 0 0; }
+  .page-header { padding: 28px 0 16px; margin-bottom: 0; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .status-line { overflow: visible; }
   .status-line__item { white-space: normal; }
