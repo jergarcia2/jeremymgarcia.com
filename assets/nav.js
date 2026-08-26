@@ -23,7 +23,8 @@
   const current = location.pathname.split('/').pop() || 'index.html';
   links.querySelectorAll('a').forEach(a => {
     const href = a.getAttribute('href');
-    if (href === current || (current === '' && href === 'index.html')) {
+    const hrefFile = (href === '/' || href === './') ? 'index.html' : href;
+    if (hrefFile === current) {
       a.classList.add('active');
     }
   });
