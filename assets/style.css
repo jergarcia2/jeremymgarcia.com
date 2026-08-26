@@ -201,7 +201,7 @@ section + section { padding-top: 0; }
 
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
-  padding: 80px 0 0;
+  padding: 56px 0 0;
   animation: fadeUp .6s ease both;
 }
 .hero__eyebrow {
@@ -239,7 +239,7 @@ section + section { padding-top: 0; }
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 /* ── Buttons ────────────────────────────────────────────── */
@@ -572,4 +572,6 @@ section + section { padding-top: 0; }
   .hero { padding: 56px 0 0; }
   .page-header { padding: 36px 0 24px; margin-bottom: 0; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
+  .status-line { overflow: visible; }
+  .status-line__item { white-space: normal; }
 }
