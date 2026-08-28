@@ -12,6 +12,52 @@ corresponds to a tagged commit (`git tag`) for easy rollback/diffing.
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-08-28
+
+### Changed
+- **Full visual redesign: "Field Manual."** Moved off the navy/steel/
+  amber "space/SaaS" look toward a warm charcoal-olive, amber-accent
+  identity with condensed uppercase placard-style headings (Barlow
+  Condensed replacing Space Grotesk), Source Sans 3 replacing Inter
+  for body text, corner-bracket detailing on cards, dashed schematic
+  dividers (status-line, page-header, section divider), and sharper
+  corners (radius 4/8px -> 2/3px) across every page. Logo SVG and
+  favicon recolored to match. Built and reviewed on a separate branch
+  (`theme/field-manual`) before merging, per plan, so the live site
+  didn't change until this was approved.
+
+## [1.5.0] - 2026-08-27
+
+### Added
+- Favicon (previously none existed on any page).
+- Open Graph + Twitter Card meta tags on every page (previously only
+  the homepage had them).
+- Canonical `<link>` on every page and Person JSON-LD structured data
+  on the homepage.
+- `sitemap.xml` and `robots.txt`.
+
+### Changed
+- Renamed `certifications.html` -> `expertise.html` so the URL matches
+  its own nav label ("Expertise"); Home/logo links now point to `/`
+  instead of `index.html` for a clean canonical URL, with `nav.js`
+  updated to treat `/` as equivalent to index.html for active-link
+  detection.
+- Moved Google Fonts loading from CSS `@import` to `<link>` tags with
+  preconnect hints — `@import` serializes the font request behind the
+  stylesheet's own load; a `<link>` lets it start in parallel.
+
+### Security
+- **Rewrote git history to remove sensitive information that had been
+  committed and later "fixed" in a later commit but was still fully
+  recoverable from the public repo's history** — clearance level,
+  grade, specific command/unit names, Navy-specific compliance
+  references, and a personal email address. Used `git-filter-repo`
+  to scrub the strings from every commit's content *and* commit
+  messages across all history and all version tags, force-pushed the
+  rewritten history, and independently re-cloned from GitHub to
+  confirm zero matches remained. Repo had zero forks, so no external
+  copies were left unaddressed.
+
 ## [1.4.1] - 2026-08-26
 
 ### Fixed
