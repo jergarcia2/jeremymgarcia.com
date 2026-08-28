@@ -210,8 +210,23 @@ section + section { padding-top: 0; }
 
 /* ── Hero ────────────────────────────────────────────────── */
 .hero {
+  position: relative;
   padding: 40px 0 0;
   animation: fadeUp .6s ease both;
+}
+.hero__decor {
+  position: absolute;
+  z-index: -1;
+  top: 24px;
+  right: -40px;
+  width: 340px;
+  height: 374px;
+  color: var(--accent);
+  opacity: .08;
+  pointer-events: none;
+}
+@media (max-width: 1000px) {
+  .hero__decor { display: none; }
 }
 .hero__eyebrow {
   font-family: var(--font-mono);
