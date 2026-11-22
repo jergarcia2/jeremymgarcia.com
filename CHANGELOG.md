@@ -12,6 +12,39 @@ corresponds to a tagged commit (`git tag`) for easy rollback/diffing.
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-11-21
+
+### Changed
+- **Content refresh from the November 2026 resume.** Experience
+  timeline now lists each role separately with month-level dates:
+  current IT Specialist (Information Security / Systems
+  Administration) role, a short Lead ISSO stint on an enterprise voice
+  system, Cybersecurity Deputy Division Head, Lead ISSO, and Senior
+  Cyber Defense Analyst / Master Gunner. Bullets now carry the
+  resume's concrete figures (six concurrent ATO packages, 200+ STIGs,
+  75 ACAS scans, 300+ endpoints, three-node RHV cluster, five-node
+  Security Onion deployment).
+- Homepage hero, FOCUS line, featured-work cards, and Person JSON-LD
+  updated to match the current role (Splunk, Defender for Endpoint,
+  Linux/RHEL) while keeping the cybersecurity headline.
+- Expertise page: added Red Hat (RHEL, Satellite, IdM, RHV), VMware
+  vSphere, Palo Alto, Zeek/Suricata, ELK, Defender for Endpoint,
+  STIG/SCAP and ACAS skills; Ansible and Docker labeled "working
+  knowledge" per the honesty convention; added an RHCSA in-progress
+  card; Security+ shown as "ce".
+- Experience sidebar: training list and core competencies brought in
+  line with the resume; added the CS minor and certificate date.
+
+### Added
+- Savannah River Nuclear Solutions automation role (2016–2017) on the
+  Experience timeline.
+
+### Removed
+- Items not on the current resume: SANS FOR500/FOR508/FOR572, GPA,
+  scholarship callout, CTF/ACM bullet, and Cisco ISE.
+- Kept to the public-site rule: no command, unit, program, or system
+  names and no clearance level, even where the resume includes them.
+
 ## [2.0.0] - 2026-08-28
 
 ### Changed
